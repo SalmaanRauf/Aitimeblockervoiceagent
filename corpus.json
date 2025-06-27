@@ -1,0 +1,28 @@
+{
+    "name": "TimeBlockerPlanner",
+    "locale": "en-US",
+    "data": [
+        {
+            "intent": "create_event",
+            "utterances": [
+                "Schedule a meeting with John from 2 PM to 3 PM",
+                "Add a new event called 'Lunch with Sarah' at 12 PM",
+                "Create an event to 'Work on the project' for tomorrow at 9 AM"
+            ],
+            "entities": {
+                "title": {
+                    "type": "regex",
+                    "regex": "/(?:a meeting with|called|to) (\\w+(?:\\s+\\w+)*)/i"
+                },
+                "start_time": {
+                    "type": "regex",
+                    "regex": "/(?:from|at) (\\d{1,2}(?:\\s?[AP]M)?)/i"
+                },
+                "end_time": {
+                    "type": "regex",
+                    "regex": "/(?:to) (\\d{1,2}(?:\\s?[AP]M)?)/i"
+                }
+            }
+        }
+    ]
+}
