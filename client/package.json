@@ -1,0 +1,52 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "@fullcalendar/bootstrap": "^5.11.5",
+    "@fullcalendar/core": "^5.11.5",
+    "@fullcalendar/daygrid": "^5.11.5",
+    "@fullcalendar/interaction": "^5.11.5",
+    "@fullcalendar/list": "^5.11.5",
+    "@fullcalendar/react": "^5.11.5",
+    "@fullcalendar/timegrid": "^5.11.5",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/user-event": "^7.2.1",
+    "bootstrap": "^5.3.7",
+    "dayjs": "^1.11.13",
+    "react": "^19.1.0",
+    "react-bootstrap": "^2.10.10",
+    "react-dom": "^19.1.0",
+    "wouter": "^3.7.1"
+  },
+  "scripts": {
+    "start": "npx http-server ./build",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^2.1.0",
+    "dotenv": "^8.2.0",
+    "sass": "^1.55.0",
+    "vite": "^3.1.8",
+    "vite-plugin-svgr": "^2.2.2",
+    "vite-tsconfig-paths": "^3.5.1"
+  }
+}
